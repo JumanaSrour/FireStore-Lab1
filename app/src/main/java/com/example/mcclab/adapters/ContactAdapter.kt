@@ -11,7 +11,7 @@ import com.example.mcclab.activities.AddContactActivity
 import com.example.mcclab.models.ContactModel
 import kotlinx.android.synthetic.main.contact_item.view.*
 
-class ContactAdapter(var context: Context, contacts: List<ContactModel>) :
+class ContactAdapter(var context: Context, contacts: ArrayList<ContactModel>) :
     RecyclerView.Adapter<ContactAdapter.ViewHolder>() {
     var contact: List<ContactModel> = contacts
 
@@ -27,15 +27,15 @@ class ContactAdapter(var context: Context, contacts: List<ContactModel>) :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val a: ContactModel = contact[position]
-        holder.tvName.text = a.name
-        holder.tvAddress.text = a.address
-        holder.tvPhone.text = a.phone
+        val contactItem: ContactModel = contact[position]
+        holder.tvName.text = contactItem.name
+        holder.tvAddress.text = contactItem.address
+        holder.tvPhone.text = contactItem.phone.toString()
         holder.cardView.setOnClickListener {
             val intent = Intent(context, AddContactActivity::class.java)
-            intent.putExtra("name", a.name)
-            intent.putExtra("address", a.address)
-            intent.putExtra("phone", a.phone)
+            intent.putExtra("name", contactItem.name)
+            intent.putExtra("address", contactItem.address)
+            intent.putExtra("phone", contactItem.phone)
             context.startActivity(intent)
         }
     }

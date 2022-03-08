@@ -14,15 +14,15 @@
         android:background="@color/purple_700">
 
         <RelativeLayout
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/dim_10"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center">
 
             <ImageButton
                 android:id="@+id/back_addContact"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="@dimen/dim_30"
+                android:layout_height="@dimen/dim_30"
                 android:src="@drawable/back_white"
                 style="@style/Widget.AppCompat.Button.Borderless"/>
 
@@ -30,11 +30,11 @@
                 android:id="@+id/tv_add_contact"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add Contact"
+                android:text="@string/add_contact"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="18sp"
-                android:paddingLeft="150dp"
+                android:textSize="@dimen/dm_18sp"
+                android:paddingLeft="@dimen/dim_150"
                 android:fontFamily="@font/g_light"
                 android:layout_alignParentStart="true"/>
         </RelativeLayout>
@@ -55,11 +55,10 @@
             <EditText
                 android:id="@+id/ed_name"
                 style="@style/TextInputEditTextStyle"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="30dp"
+                android:layout_marginTop="@dimen/dim_10"
+                android:layout_marginHorizontal="@dimen/dim_30"
                 android:imeOptions="actionNext"
-                android:hint="Name"
+                android:hint="@string/name"
                 android:inputType="textPersonName"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -71,11 +70,10 @@
             <EditText
                 android:id="@+id/ed_address"
                 style="@style/TextInputEditTextStyle"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="30dp"
+                android:layout_marginTop="@dimen/dim_15"
+                android:layout_marginHorizontal="@dimen/dim_30"
                 android:clickable="false"
-                android:hint="Address"
+                android:hint="@string/address"
                 android:inputType="textEmailAddress"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -88,35 +86,34 @@
             <EditText
                 android:id="@+id/ed_phone"
                 style="@style/TextInputEditTextStyle"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="30dp"
+                android:layout_marginTop="@dimen/dim_15"
+                android:layout_marginHorizontal="@dimen/dim_30"
                 android:clickable="false"
                 android:imeOptions="actionDone"
-                android:hint="Phone"
-                android:inputType="text"/>
+                android:hint="@string/phone"
+                android:inputType="phone"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
             android:id="@+id/btn_save"
-            android:layout_width="325dp"
-            android:layout_height="52dp"
+            android:layout_width="@dimen/dim_325"
+            android:layout_height="@dimen/dim_52"
             app:backgroundTint="@null"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="@dimen/dim_30"
             android:background="@drawable/btn_regular"
-            android:text="Save"
+            android:text="@string/save"
             android:textAllCaps="false"
             android:layout_gravity="center_horizontal"
-            android:textSize="15sp"
+            android:textSize="@dimen/dim_15sp"
             android:fontFamily="@font/g_light"/>
 
 
         <ProgressBar
             android:id="@+id/loader"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/dim_30"
+            android:layout_height="@dimen/dim_30"
             android:layout_gravity="center_horizontal"
             />
     </LinearLayout>
