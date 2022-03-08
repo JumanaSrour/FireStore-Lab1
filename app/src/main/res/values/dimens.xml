@@ -1,20 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="dim_10">10dp</dimen>
-    <dimen name="dim_30">30dp</dimen>
-    <dimen name="dm_18sp">18sp</dimen>
-    <dimen name="dim_150">150dp</dimen>
-    <dimen name="dim_15">15dp</dimen>
-    <dimen name="dim_325">325dp</dimen>
-    <dimen name="dim_52">52dp</dimen>
-    <dimen name="dim_15sp">15sp</dimen>
-    <dimen name="dim_5">5dp</dimen>
-    <dimen name="dim_35">35dp</dimen>
-    <dimen name="dim_54">54dp</dimen>
-    <dimen name="dim_4">4dp</dimen>
-    <dimen name="dim_6">6dp</dimen>
-    <dimen name="dim_200">200dp</dimen>
-    <dimen name="dim_20sp">20sp</dimen>
-    <dimen name="dim_16sp">16sp</dimen>
-    <dimen name="dim_100">100dp</dimen>
 </resources>
