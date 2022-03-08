@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity() {
     private fun setEventListeners() {
         btn_add_contact.setOnClickListener {
             startActivity(Intent(this, AddContactActivity::class.java))
+            finish()
         }
     }
 }

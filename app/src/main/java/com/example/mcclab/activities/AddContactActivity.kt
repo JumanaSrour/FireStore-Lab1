@@ -42,6 +42,7 @@ class AddContactActivity : AppCompatActivity() {
     private fun setEventListeners() {
         back_addContact.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
         btn_save.setOnClickListener {
             if (ed_name.text.isEmpty() || ed_address.text.isEmpty() || ed_phone.text.isEmpty()) {
@@ -69,6 +70,7 @@ class AddContactActivity : AppCompatActivity() {
                 Toast.makeText(this@AddContactActivity, getString(R.string.success), Toast.LENGTH_SHORT).show()
                 loader.visibility = View.INVISIBLE
                 startActivity(Intent(this, MainActivity::class.java))
+                finish()
             }
                 .addOnFailureListener {
                     Toast.makeText(this@AddContactActivity, getString(R.string.failed), Toast.LENGTH_SHORT).show()
