@@ -14,6 +14,10 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import kotlinx.android.synthetic.main.activity_add_contact.*
+import android.app.ProgressDialog
+
+
+
 
 class AddContactActivity : AppCompatActivity() {
     private var firebaseStore: FirebaseStorage? = null
