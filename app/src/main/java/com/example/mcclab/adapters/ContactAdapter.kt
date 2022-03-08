@@ -19,7 +19,6 @@ class ContactAdapter(var context: Context, contacts: ArrayList<ContactModel>) :
         var tvName = itemView.tv_name
         var tvAddress = itemView.tv_address
         var tvPhone = itemView.tv_phone
-        var cardView = itemView.cardView
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.contact_item, parent, false)
@@ -31,13 +30,6 @@ class ContactAdapter(var context: Context, contacts: ArrayList<ContactModel>) :
         holder.tvName.text = contactItem.name
         holder.tvAddress.text = contactItem.address
         holder.tvPhone.text = contactItem.phone.toString()
-        holder.cardView.setOnClickListener {
-            val intent = Intent(context, AddContactActivity::class.java)
-            intent.putExtra("name", contactItem.name)
-            intent.putExtra("address", contactItem.address)
-            intent.putExtra("phone", contactItem.phone)
-            context.startActivity(intent)
-        }
     }
 
     override fun getItemCount(): Int {
