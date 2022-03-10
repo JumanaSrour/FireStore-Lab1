@@ -14,10 +14,6 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import kotlinx.android.synthetic.main.activity_add_contact.*
-import android.app.ProgressDialog
-
-
-
 
 class AddContactActivity : AppCompatActivity() {
     private var firebaseStore: FirebaseStorage? = null
@@ -63,6 +59,7 @@ class AddContactActivity : AppCompatActivity() {
         initiateProperties()
         try {
             loader.visibility = View.VISIBLE
+            btn_save.isEnabled = false
             this.window.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
             val param = ArrayMap<String, Any>()
