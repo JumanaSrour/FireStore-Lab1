@@ -9,9 +9,17 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/MccLab/app/src/main/res/drawable/gradient.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MccLab/app/src/main/res/font/roboto_thin.xml" value="0.1265625" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MccLab/app/src/main/res/layout/activity_add_contact.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MccLab/app/src/main/res/layout/activity_clothes.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MccLab/app/src/main/res/layout/activity_electronics.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MccLab/app/src/main/res/layout/activity_food.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MccLab/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MccLab/app/src/main/res/layout/activity_product_details.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MccLab/app/src/main/res/layout/activity_storage.xml" value="0.14764492753623187" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MccLab/app/src/main/res/layout/activity_third_analytics.xml" value="0.5" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MccLab/app/src/main/res/layout/clothes_item.xml" value="0.15760869565217392" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MccLab/app/src/main/res/layout/contact_item.xml" value="0.37281553398058254" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MccLab/app/src/main/res/layout/electronics_item.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/MccLab/app/src/main/res/layout/food_item.xml" value="0.15760869565217392" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MccLab/app/src/main/res/layout/product_item.xml" value="0.4122137404580153" />
       </map>
     </option>
